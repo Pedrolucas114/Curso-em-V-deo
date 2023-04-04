@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/P.png" type="Image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/M.png" type="image/png">
+        <img src="Imagens/G.png" alt="imagem G">
+    </picture>
+
+    <!--Usar a tag picture, depois a tag img (para definir a imagem padrão) e acima da padrão as resoluções posteriores-->
+
+    <!--Ele vai carregar a foto G, porém se o navegador tiver menos que 1000px (MUDAR PARA MAX-WIDTH), ele muda para a foto M, ou seja, alterna o formato da imagem de acordo com a mudança do navegador (arrastar, ou deixar metade, por ex), o mesmo para 750px (passagem do m para o p)-->
+
+    <!--Colocar o /png após o "Image"-->
+
+    <!--A base é a imagem padrão, depois acima dela vão sendo adicionado os "soucers", sempre um acima do outro-->
+    
+    <h1>Reproduzindo aúdios</h1>
+    <h2>Forma mais limitada</h2>
+    <audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+    <!--Controls para aparecer o controle de aúdio-->
+    <!--MP3 WAV OGG-->
+
+    <h2>Forma mais completa</h2>
+    <audio preload="metadata" autoplay controls loop>
+    <source src="midia/Metro - Yung Logos.mp3" type="audio/mpeg">
+    <source src="midia/Metro - Yung Logos.ogg" type="audio/ogg">
+    <source src="midia/Metro - Yung Logos.wav" type="audio/wav">
+    <p>Infelzimente o seu navegador não consegue reproduzir aúdio. <a href="midia/Metro - Yung Logos.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+    <!--Esse final é para baixar caso o navegador não permita reproduzir nenhuma das três formas: MP3 WAV OGG (não é o nosso caso)-->
+
+    <!--Caso queira repetir a música colocar "loop" ao lado de controls-->    
+    </audio>
+
+</body>
+</html>

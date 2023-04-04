@@ -1,0 +1,5 @@
+PROCURAR O SITE: icon archive PARA OBTER ICONES PRÉ-PRONTO
+PROCURAR O SITE FAVICON.CC PARA CRIAR SEU ICO
+PROCURAR O SITE FAVICON.IO PARA CONVERTER EM ICO
+
+escrever link no head que vai aparecer a opção do favicon
